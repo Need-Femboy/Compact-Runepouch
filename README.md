@@ -1,2 +1,1 @@
-# Example
-An example greeter plugin
+![RunePouch](./img/RunePouch.png)
