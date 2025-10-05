@@ -37,6 +37,9 @@ public class CompactRunepouchPlugin extends Plugin
 				//Original 4 widgets have the name widget be the second static child, the new ones have it be the first one for some reason.
 				Widget actualNameWidget = loadout.getStaticChildren()[1].getOriginalHeight() == 18 ? loadout.getStaticChildren()[1] : loadout.getStaticChildren()[0];
 				actualNameWidget.setHidden(true);
+				if (loadout.getChildren() != null) {
+					loadout.getChild(0).setHidden(true);
+				}
 				loadout.setOriginalY(newY);
 				loadout.revalidate();
 				newY += 35;
